@@ -1,0 +1,57 @@
+*ibm_bluemix.txt* IBM Watson API Client.
+
+Author:  KazuakiM <twitter@NanohaAsOnKai>
+License: MIT License.
+
+==============================================================================
+CONTENTS					*ibm_bluemix-contents*
+
+INTRODUCTION			|ibm_bluemix-introduction|
+INTERFACE			|ibm_bluemix-interface|
+  VARIABLES			  |ibm_bluemix-variables|
+  FUNCTIONS			  |ibm_bluemix-functions|
+
+==============================================================================
+INTRODUCTION					*ibm_bluemix-introduction*
+
+This plugin is IBM Watson API Client.
+
+==============================================================================
+INTERFACE					*ibm_bluemix-interface*
+
+------------------------------------------------------------------------------
+VARIABLES					*ibm_bluemix-variables*
+
+g:ibm_bluemix#config = {}			*g:ibm_bluemix#config*
+	This variable is oauth setting variable.
+
+(require)
+						*g:ibm_bluemix#config.username*
+g:ibm_bluemix#config.username = {value}
+	Get account at IBM HP.
+
+						*g:ibm_bluemix#config.password*
+g:ibm_bluemix#config.password = {value}
+	Get account at IBM HP.
+
+						*g:ibm_bluemix#config.target*
+g:ibm_bluemix#config.target = {value}
+	This variable is translation target.
+
+						*g:ibm_bluemix#config.source*
+g:ibm_bluemix#config.source = {value}
+	This variable is translation source.
+
+(optional)
+						*g:ibm_bluemix#config.strict*
+g:ibm_bluemix#config.strict = {value}
+	If you want strictly translation, you set '1'.
+
+------------------------------------------------------------------------------
+FUNCTIONS					*ibm_bluemix-functions*
+
+ibm_bluemix#execute()				*ibm_bluemix#execute()*
+	return translate text.
+
+==============================================================================
+vim:tw=78:ts=8:ft=help:norl
